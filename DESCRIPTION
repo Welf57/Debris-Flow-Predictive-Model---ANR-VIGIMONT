@@ -1,0 +1,24 @@
+Package: DebrisFlowRF
+Type: Package
+Title: Debris-Flow Triggering Prediction from Rainfall and Lightning Data
+Version: 0.1.0
+Author: Welfringer Théo
+Maintainer: Welfringer Théo <theo.welfringer@gmail.com>
+Description: Builds rainfall events from a 15-min rainfall time series,
+    extracts the rainfall and lightning descriptors used by a pre-trained
+    Random Forest model ('ranger' package), and predicts the probability of
+    debris-flow triggering for full rainfall events. The example
+    provided evaluates the model on complete events (the full event is known
+    before being submitted to the model); the descriptor-extraction
+    functions could in principle be reused to evaluate a growing event
+    step by step, but this use case is not implemented or evaluated here.
+License: MIT
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports:
+    slider,
+    terra,
+    ranger,
+    stats,
+    graphics
+RoxygenNote: 7.2.3

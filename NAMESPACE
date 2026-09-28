@@ -1,0 +1,14 @@
+export(extract_rain_events)
+export(max_strikes_sliding)
+export(extract_basin_lightning)
+export(apply_normalization)
+export(build_rainfall_event)
+export(predict_debris_flow_probability)
+export(plot_debris_flow_probabilities)
+export(is_above_ID)
+
+import(terra)
+
+importFrom(slider, slide)
+importFrom(stats, predict)
+importFrom(graphics, barplot, abline, text)
